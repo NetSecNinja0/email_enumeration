@@ -2,7 +2,7 @@ import requests
 import sys
 
 def check_email(email):
-    url = 'http://enum.thm/labs/verbose_login/functions.php'  # Location of the login function
+    url = 'http://ramu.ips/labe/verbose_login/functions.php'  # Location of the login function
     headers = {
         'Host': 'enum.thm',
         'User-Agent': 'Mozilla/5.0 (X11; Linux aarch64; rv:102.0) Gecko/20100101 Firefox/102.0',
@@ -13,7 +13,7 @@ def check_email(email):
         'X-Requested-With': 'XMLHttpRequest',
         'Origin': 'http://enum.thm',
         'Connection': 'close',
-        'Referer': 'http://enum.thm/labs/verbose_login/',
+        'Referer': 'http://ramu.ips/labe/verbose_login/functions.php',
     }
     data = {
         'username': email,
